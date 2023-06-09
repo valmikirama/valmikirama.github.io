@@ -6,9 +6,9 @@ body{
     font-family: Comfortaa, serif;
     background: linear-gradient(90deg, #350ED8 0%, #1D1C1C 100%);
 }
-p{
+/* p{
     color: aquamarine;
-}
+} */
 .nav-link{
     color: aquamarine;
 }
@@ -69,7 +69,7 @@ footer,
 }
 .nav-item img{
     margin-inline: 0.5em;
-    width: 25px;
+    width: 30px;
     border-radius: 50%;
 }
 .ph-help img{
@@ -77,8 +77,8 @@ footer,
     border-radius: 50%; 
 }
 
-.call-animation {
-    animation: froggy 4s ease 5s infinite normal forwards;
+.call-animation:hover {
+    animation: froggy 4s ease 0s infinite normal forwards;
 }
 
 @keyframes froggy {
@@ -91,4 +91,58 @@ footer,
 		opacity: 1;
 		transform: rotate(0) scale(1);
 	}
+}
+.card-animation:hover  {
+    animation: cardAnim 1s ease 0s 2 normal forwards;
+   
+}
+.card-animation a {
+    text-decoration: none;
+    color: rgb(124, 231, 17);
+}
+@keyframes cardAnim {
+	0% {
+		transform: translate(0);
+	}
+
+	20% {
+		transform: translate(-2px, 2px);
+	}
+
+	40% {
+		transform: translate(-2px, -2px);
+	}
+
+	60% {
+		transform: translate(2px, 2px);
+	}
+
+	80% {
+		transform: translate(2px, -2px);
+	}
+
+	100% {
+		transform: translate(0);
+	}
+}
+.card:hover{
+    animation: cardAnim 1s ease 0s 2 normal forwards;
+}
+
+.form-list{
+    color: aqua;
+
+}
+.form-list ol{
+    list-style: none;
+}
+
+label {
+    display: block;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+input,
+label {
+    margin: 0.4rem 0;
 }
